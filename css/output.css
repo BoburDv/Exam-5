@@ -1027,9 +1027,6 @@
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
   }
-  .my-auto {
-    margin-block: auto;
-  }
   .ms-2 {
     margin-inline-start: calc(var(--spacing) * 2);
   }
@@ -1550,9 +1547,6 @@
       text-align: center;
     }
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -1565,44 +1559,17 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
-  }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
-  .w-16 {
-    width: calc(var(--spacing) * 16);
-  }
-  .w-44 {
-    width: calc(var(--spacing) * 44);
-  }
-  .w-48 {
-    width: calc(var(--spacing) * 48);
-  }
-  .w-49 {
-    width: calc(var(--spacing) * 49);
-  }
   .w-56 {
     width: calc(var(--spacing) * 56);
   }
-  .w-62 {
-    width: calc(var(--spacing) * 62);
-  }
   .w-64 {
     width: calc(var(--spacing) * 64);
-  }
-  .w-65 {
-    width: calc(var(--spacing) * 65);
   }
   .w-full {
     width: 100%;
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
-  }
-  .max-w-4xl {
-    max-width: var(--container-4xl);
   }
   .max-w-6xl {
     max-width: var(--container-6xl);
@@ -2153,9 +2120,6 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
-  .p-19 {
-    padding: calc(var(--spacing) * 19);
-  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -2201,9 +2165,6 @@
     .dark .apexcharts-canvas &:not(.apexcharts-inactive-legend):hover {
       color: white !important;
     }
-  }
-  .pl-2 {
-    padding-left: calc(var(--spacing) * 2);
   }
   .datatable-empty {
     .datatable-wrapper .datatable-table & {
@@ -2400,10 +2361,6 @@
   }
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-xs {
-    --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {

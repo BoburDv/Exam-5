@@ -1,3 +1,9 @@
+// document.addEventListener("DOMContentLoaded", function(){
+//   if(!localStorage.getItem("user")){
+//     window.location.href = "./pages/login.html"
+//   }
+// })
+
 const LOADER = document.getElementById("loader")
 const CONTAIN = document.getElementById("contain")
 
@@ -10,7 +16,7 @@ fetch("https://json-api.uz/api/project/fn37/cars")
     ui(res);
   });
 
-function ui({ data }) {
+function ui({data}){
   LOADER.classList.add("hidden");
   data.forEach((element) => {
     const { id, description, price, name } = element;
@@ -29,8 +35,8 @@ function ui({ data }) {
           </a>
           </div>
        </li>
-    `;
-  });
+    `
+  })
   CONTAIN.classList.remove("hidden");
   CONTAIN.classList.toggle("grid");
 }
