@@ -1,5 +1,14 @@
 @import "tailwindcss";
-
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+
+@layer utilities{
+    .shadow{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .custom-scrollbar {
+        scrollbar-color: #3b82f6 #ffffff00;
+      }
+}

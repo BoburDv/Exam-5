@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/output.css">
-    <title>Exam-5-oy</title>
-</head>
-<body>
-    
-    1
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/output.css" />
+    <title>Main Page</title>
+  </head>
+  <body class="bg-gray-50">
 
+    <!-- Login btn -->
+    <div class="text-right mx-auto max-w-6xl my-6">
+        <a href="pages/login.html" id="moreBtn" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Log in</a>
+    </div>
+
+    <!-- Skleton card -->
+    <div class="grid grid-cols-3 gap-7 max-w-6xl mx-auto w-full max-h-[70vh] overflow-y-scroll custom-scrollbar" id="loader">
+      <div role="status" class="flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-2xl animate-pulse dark:bg-gray-700"></div>
+      <div role="status" class="flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-2xl animate-pulse dark:bg-gray-700"></div>
+      <div role="status" class="flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-2xl animate-pulse dark:bg-gray-700"></div>
+      <div role="status" class="flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-2xl animate-pulse dark:bg-gray-700"></div>
+      <div role="status" class="flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-2xl animate-pulse dark:bg-gray-700"></div>
+      <div role="status" class="flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-2xl animate-pulse dark:bg-gray-700"></div>
+      <div role="status" class="flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-2xl animate-pulse dark:bg-gray-700"></div>
+      <div role="status" class="flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-2xl animate-pulse dark:bg-gray-700"></div>
+      <div role="status" class="flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-2xl animate-pulse dark:bg-gray-700"></div>
+      <div role="status" class="flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-2xl animate-pulse dark:bg-gray-700"></div>
+      <div role="status" class="flex items-center justify-center h-56 max-w-sm bg-gray-300 rounded-2xl animate-pulse dark:bg-gray-700"></div>
+    </div>
+
+    <!-- Main card -->
+    <ul class="grid-cols-3 gap-7 max-w-6xl mx-auto w-full max-h-[70vh] rounded-lg overflow-y-scroll custom-scrollbar hidden" id="contain">
+    </ul>
+      
+    <!-- Add data btn -->
+    <div class="text-center my-6">
+       <a href="pages/add.html" id="moreBtn" class="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg">Ma'lumot qo'shish +</a>
+    </div>
+
+    <script src="js/main.js"></script>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
-</body>
+  </body>
 </html>
