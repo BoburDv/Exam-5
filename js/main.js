@@ -1,11 +1,11 @@
-// document.addEventListener("DOMContentLoaded", function(){
-//   if(!localStorage.getItem("user")){
-//     window.location.href = "./pages/login.html"
-//   }
-// })
-
+document.addEventListener("DOMContentLoaded", function(){
+  if(!localStorage.getItem("user")){
+    window.location.href = "./pages/login.html"
+  }
+})
 const LOADER = document.getElementById("loader")
 const CONTAIN = document.getElementById("contain")
+
 
 // Card main malumotlari uchun ===========================>
 fetch("https://json-api.uz/api/project/fn37/cars")
@@ -15,7 +15,6 @@ fetch("https://json-api.uz/api/project/fn37/cars")
   .then((res) => {
     ui(res);
   });
-
 function ui({data}){
   LOADER.classList.add("hidden");
   data.forEach((element) => {
@@ -33,10 +32,14 @@ function ui({data}){
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
           </svg>
           </a>
+          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          ${id}
+          </a>
           </div>
        </li>
     `
   })
+  
   CONTAIN.classList.remove("hidden");
   CONTAIN.classList.toggle("grid");
 }

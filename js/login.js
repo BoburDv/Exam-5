@@ -1,12 +1,16 @@
+document.addEventListener("DOMContentLoaded", function(){
+  if(localStorage.getItem("user")){
+    window.location.href = "../index.html"
+  }
+})
+
 const FORM = document.getElementById("form");
 const REMEMBER = document.getElementById("remember");
 
 // formadan malumot olish ===========================>
 FORM.addEventListener("submit", function (e){
   e.preventDefault();
-
-  const formData = new FormData(e.target);
-
+  const formData = new FormData(e.target)
   const result = {}
   for (const [key, value] of formData.entries()){
     result[key] = value;
@@ -14,16 +18,16 @@ FORM.addEventListener("submit", function (e){
   const checker = validator(result)
 
   if (checker) {
-    const toast = document.getElementById("toast-top-right");
-    toast.querySelector("div").textContent = checker.message;
+    const toast = document.getElementById("toast-top-right")
+    toast.querySelector("div").textContent = checker.message
     toast.classList.remove("hidden")
     setTimeout(() => {
       toast.classList.add("hidden")
-    }, 2500);
+    }, 2500)
 
     e.target[checker.target].focus()
   } else {
-    login(result);
+    login(result)
 
     if (REMEMBER.checked) {
       localStorage.setItem("user", JSON.stringify(result))
@@ -33,7 +37,7 @@ FORM.addEventListener("submit", function (e){
 
 
 // input tekshiruvi ===========================>
-export function validator(object) {
+function validator(object) {
   if (object.username.trim() == ""){
     return {target: "username", message: "Foydalanuvchi nomini kiriting!"}
   }

@@ -1,8 +1,9 @@
-// document.addEventListener("DOMContentLoaded", function(){
-//   if(!localStorage.getItem("user")){
-//     window.location.href = "../pages/login.html"
-//   }
-// })
+document.addEventListener("DOMContentLoaded", function(){
+  if(!localStorage.getItem("user")){
+    window.location.href = "../pages/login.html"
+  }
+})
+
 
 async function addCar(object) {
   const token = JSON.parse(localStorage.getItem("user"))?.access_token;
@@ -20,6 +21,7 @@ async function addCar(object) {
   }
 }
 
+
 // Formadan malumot olish
 document.getElementById("addForm").addEventListener("submit", function (e){
   e.preventDefault()
@@ -30,6 +32,7 @@ document.getElementById("addForm").addEventListener("submit", function (e){
     description: formData.get("desc")
   }
 
+  
   // ish statusi
   addCar(car)
     .then((res) => {
